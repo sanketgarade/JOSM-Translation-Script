@@ -1,0 +1,11 @@
+[out:xml][timeout:25];
+// gather results
+(
+  area[name="Kerala"];
+  // query for "place" "without name:ml" tags
+  node["place"](area)["name:ml"!~"."](area);
+);
+// print results
+out meta;
+>;
+out meta qt;
