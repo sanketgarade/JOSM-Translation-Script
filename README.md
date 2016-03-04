@@ -5,7 +5,7 @@ Installation:
 
 1. Download "translate.js" and "dict.csv" and place them in the same path and you are done.
 
-2. You can create your own "dict.csv" using any spreadsheet app and saving the result as a CSV file. Ensure that the first column corresponds to the "name" field and second colomn corresponds to the translated string in the "name:xx" field.
+2. You can create your own "dict.csv" using any spreadsheet app and saving the result as a CSV file. Ensure that the first column corresponds to the "name" field and second colomn corresponds to the translated string in the "name:xx" field. Please note that it is important to have the data in the first column sorted in the ascending order.
 
 3. Modify "name:xx" fields in the script to correspond to the target language.
 
