@@ -58,15 +58,15 @@ function parseCSV(str) {
 function binarySearch(arr, start, end, i) 
 {
     var mid = Math.floor((end-start) / 2) + start;
-    if (arr[mid][0] == i)
+    if (arr[mid][0].toLowerCase() == i.toLowerCase())
     {
         return mid;
     }
-    else if (arr[mid][0] < i && (end-start) > 1)
+    else if (arr[mid][0].toLowerCase() < i.toLowerCase() && (end-start) > 1)
     {
         return binarySearch(arr, mid+1, end, i);
     }
-    else if (arr[mid][0] > i && (end-start) > 1)
+    else if (arr[mid][0].toLowerCase() > i.toLowerCase() && (end-start) > 1)
     {
         return binarySearch(arr, start, mid-1, i);
     }
