@@ -77,7 +77,8 @@ function binarySearch(arr, start, end, i)
 }
 
 // Open current dataset
-var dataset = org.openstreetmap.josm.Main.main.getCurrentDataSet()
+var layers = require("josm/layers");
+var dataset = layers.activeLayer.data
 
 // Obtain all places
 places = dataset.query("place=*");
@@ -86,7 +87,7 @@ places = dataset.query("place=*");
 josm.alert("Number of places :" + places.length);
 
 // Read from Dictionary file
-var txtFile = "dict.csv"
+var txtFile = "/home/pced/JOSM/dict.csv"
 var file_reader = new java.io.FileReader(txtFile);
 var dict_txt = ""
 var data = ""
