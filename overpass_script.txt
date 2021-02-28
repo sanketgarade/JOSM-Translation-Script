@@ -1,9 +1,9 @@
 [out:xml][timeout:25];
 // gather results
 (
-  area[name="Kerala"];
-  // query for "place" "without name:ml" tags
-  node["place"](area)["name:ml"!~"."](area);
+  area[name="Pune District"];
+  // query for "place" "without name:mr" tags
+  node["place"](area)["name:mr"!~"."](area);
 );
 // print results
 out meta;
